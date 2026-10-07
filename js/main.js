@@ -63,19 +63,19 @@
     lightboxContent.innerHTML = "";
     var closeBtn = document.createElement("button");
     closeBtn.className = "lightbox-close";
-    closeBtn.setAttribute("aria-label", "Schließen / Close");
+    closeBtn.setAttribute("aria-label", "Close");
     closeBtn.innerHTML = '<svg class="icon" viewBox="0 0 24 24"><use href="#icon-close"></use></svg>';
     closeBtn.addEventListener("click", closeLightbox);
 
     var prevBtn = document.createElement("button");
     prevBtn.className = "lightbox-nav lightbox-prev";
-    prevBtn.setAttribute("aria-label", "Vorheriges Bild / Previous");
+    prevBtn.setAttribute("aria-label", "Previous image");
     prevBtn.innerHTML = '<svg class="icon" viewBox="0 0 24 24"><use href="#icon-chevron-left"></use></svg>';
     prevBtn.addEventListener("click", function () { show((currentIndex - 1 + galleryItems.length) % galleryItems.length); });
 
     var nextBtn = document.createElement("button");
     nextBtn.className = "lightbox-nav lightbox-next";
-    nextBtn.setAttribute("aria-label", "Nächstes Bild / Next");
+    nextBtn.setAttribute("aria-label", "Next image");
     nextBtn.innerHTML = '<svg class="icon" viewBox="0 0 24 24"><use href="#icon-chevron-right"></use></svg>';
     nextBtn.addEventListener("click", function () { show((currentIndex + 1) % galleryItems.length); });
 

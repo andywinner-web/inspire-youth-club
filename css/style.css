@@ -222,23 +222,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,[tabindex]:focus-visibl
 }
 .nav-links a:hover{color:var(--navy-900);}
 .nav-actions{display:flex;align-items:center;gap:.75rem;}
-.lang-toggle{
-  display:inline-flex;align-items:center;gap:.25rem;
-  border:1.5px solid var(--border);background:var(--white);
-  border-radius:var(--radius-pill);padding:.25rem;
-  font-family:var(--font-head);font-weight:700;font-size:.82rem;
-  color:var(--navy-900);
-}
-.lang-toggle button{
-  padding:.5rem .8rem;
-  min-width:44px;min-height:36px;
-  display:inline-flex;align-items:center;justify-content:center;
-  border-radius:var(--radius-pill);
-  border:none;background:none;
-  font-family:inherit;font-weight:inherit;font-size:inherit;color:inherit;
-  cursor:pointer;
-}
-.lang-toggle button[aria-current="true"]{background:var(--navy-900);color:#fff;}
 .nav-toggle{
   display:none;background:none;border:none;padding:.5rem;
   color:var(--navy-900);min-width:44px;min-height:44px;
